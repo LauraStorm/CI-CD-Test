@@ -19,5 +19,8 @@ public class Bruger {
 
     private String username;
 
+    public Bruger(String username) {
+        this.username = username;
+    }
 }
 

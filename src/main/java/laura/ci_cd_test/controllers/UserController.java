@@ -17,8 +17,10 @@ public class UserController {
     }
 
     @GetMapping("/")
-    public String test(){
-        return "Hello dette er en test ";
+    public ResponseEntity<Bruger> test(){
+        Bruger bruger = new Bruger("CI/CD BRUGER");
+        userService.save(bruger);
+        return new ResponseEntity<>(bruger, HttpStatus.OK);
     }
 
 
