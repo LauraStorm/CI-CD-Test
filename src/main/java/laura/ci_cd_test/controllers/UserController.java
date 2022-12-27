@@ -16,6 +16,10 @@ public class UserController {
         this.userService = userService;
     }
 
+    @GetMapping("/")
+    public String test(){
+        return "Hello dette er en test ";
+    }
 
 
     @GetMapping("/findAll")
