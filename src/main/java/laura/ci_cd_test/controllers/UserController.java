@@ -18,7 +18,7 @@ public class UserController {
 
 
 
-    @GetMapping("/")
+    @GetMapping("/findAll")
     public ResponseEntity<Set<Bruger>> getAllUsers (){
         //Gem listen
         Set<Bruger> allUsers = userService.findAll();
